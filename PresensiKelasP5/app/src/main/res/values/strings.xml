@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">PresensiKelasP5</string>
+    <string name="p5_title">Presensi Kelas</string>
+    <string name="p5_date">Senin, 12 Oktober</string>
+    <string name="p5_status_label">Status Kehadiran</string>
+    <string name="p5_status_value">Hadir</string>
+    <string name="p5_status_info">Kehadiran Anda tercatat</string>
+    <string name="p5_summary_title">Ringkasan</string>
+    <string name="p5_hadir_label">Hadir</string>
+    <string name="p5_hadir_value">14</string>
+    <string name="p5_izin_label">Izin</string>
+    <string name="p5_izin_value">2</string>
+    <string name="p5_alfa_label">Alfa</string>
+    <string name="p5_alfa_value">1</string>
+    <string name="p5_button">Catat Kehadiran</string>
 </resources>

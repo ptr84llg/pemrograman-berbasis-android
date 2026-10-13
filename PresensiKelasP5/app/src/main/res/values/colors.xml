@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="p5_background">#FFFAFBFE</color>
+    <color name="p5_ink">#FF1F2937</color>
+    <color name="p5_body">#FF374151</color>
+    <color name="p5_muted">#FF6B7280</color>
+    <color name="p5_success">#FF15803D</color>
+    <color name="p5_primary">#FF2563EB</color>
+    <color name="p5_white">#FFFFFFFF</color>
 </resources>
