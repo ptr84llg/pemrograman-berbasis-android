@@ -1,0 +1,27 @@
+# --- BEGIN ANDROID PRAKTIKUM SAFETY IGNORE ---
+# IDE and build caches (do not commit)
+**/.idea/
+**/.gradle/
+**/.kotlin/
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
+**/captures/
+**/*.iml
+**/*.apk
+**/*.aab
+# Local machine paths and sensitive material
+**/local.properties
+**/.env
+**/.env.*
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.pem
+**/*.key
+**/google-services.json
+# OS & crash artifacts
+**/Thumbs.db
+**/.DS_Store
+**/*.hprof
+# --- END ANDROID PRAKTIKUM SAFETY IGNORE ---
