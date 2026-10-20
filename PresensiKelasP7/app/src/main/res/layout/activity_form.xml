@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFAFBFE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Presensi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF1F2937" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Isi identitas dan pilih status kehadiran."
+            android:textSize="14sp"
+            android:textColor="#FF6B7280" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Nama Mahasiswa"
+            android:textColor="#FF374151"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Masukkan nama lengkap"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="#FF1F2937"
+            android:textColorHint="#FF6B7280" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="NIM"
+            android:textColor="#FF374151"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Masukkan NIM"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#FF1F2937"
+            android:textColorHint="#FF6B7280" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Status Kehadiran"
+            android:textSize="16sp"
+            android:textColor="#FF374151" />
+
+        <RadioGroup
+            android:id="@+id/radioStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radioHadir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hadir" />
+            <RadioButton
+                android:id="@+id/radioIzin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Izin" />
+            <RadioButton
+                android:id="@+id/radioSakit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sakit" />
+        </RadioGroup>
+
+        <!-- P7: preview langsung dari state, disusun melalui Views/XML. -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Live Preview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF1F2937" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nama yang terbaca dari state"
+            android:textColor="#FF6B7280"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtPreviewNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum diisi"
+            android:textSize="16sp"
+            android:textColor="#FF374151" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="NIM yang terbaca dari state"
+            android:textColor="#FF6B7280"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtPreviewNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum diisi"
+            android:textSize="16sp"
+            android:textColor="#FF374151" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Status yang terbaca dari state"
+            android:textColor="#FF6B7280"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtPreviewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum dipilih"
+            android:textSize="16sp"
+            android:textColor="#FF374151" />
+
+        <TextView
+            android:id="@+id/txtPreviewKesiapan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Data belum lengkap"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF6B7280" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Reset Form"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Catat Kehadiran"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#FF2563EB" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Latihan P7: state sementara mengubah preview dan tombol. Data tidak disimpan ke database."
+            android:textSize="12sp"
+            android:textColor="#FF6B7280" />
+    </LinearLayout>
+</ScrollView>
